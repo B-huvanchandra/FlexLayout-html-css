@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <title>Layout page</title>
+    <head></head>
+    <style>
+        header{
+            display: flex;
+            height: 200px;
+            flex-direction: row;
+            border: 2px solid black;
+        }
+        .left{
+            height: inherit;
+            width: 20%;
+            background-color: red;
+            background-size: cover;
+            background-image: url("data:image/png;base64,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");
+        }
+        .right{
+            height: inherit;
+            width: 80%;
+            background-color: rgb(0, 175, 181);
+            font-style: italic;
+        }
+        h1{
+            text-align: center;
+            text-shadow: 0px 1px 5px rgb(183, 8, 202);
+            font-style: oblique;
+        }
+        p{
+            text-align: center;
+        }
+        nav{
+            height: 50px;
+            display: grid;
+            background-color: orange;
+            grid-template-columns: 20% 20% 20% 20% 20%;
+        }
+        .b{
+            height: inherit;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+
+        }
+        section{
+            height: 400px;
+            display: flex;
+            flex-direction: row;
+        }
+        .s1{
+            height: inherit;
+            width: 20%;
+            background-color:rgb(237, 128, 10);
+        }
+        .s2{
+            height: inherit;
+            width: 20%;
+            background-color: rgb(34, 156, 23);
+        }
+        .s3{
+            height: inherit;
+            width: 20%;
+            background-color: rgb(226, 228, 228);
+        }
+        .s4{
+            height: inherit;
+            width: 20%;
+            background-color: rgb(193, 47, 162);
+            
+        }
+        .s5{
+            height: inherit;
+            width: 20%;
+            background-color:#ded52d;
+            
+        }
+        marquee{
+            height: inherit;
+        }
+        .h1{
+            text-align: center;
+            font-style: oblique;
+            color: red;
+        }
+        footer{
+            height: 100px;
+            width: 100%;
+            background-color: aqua;
+        }
+    </style>
+    <body>
+        <header>
+            <div class="left"></div>
+            <div class="right">
+               <h1>CHANDU PHOTOGRAPHY</h1>
+               <p>NELLORE</p>
+            </div>
+        </header>
+        <nav>
+            <div class="b">
+                <a href="">HOME:</a>
+            </div>
+            <div class="b">
+                <a href="">ABOUT:</a>
+            </div>
+            <div class="b">
+                <a href="">MODELS:</a>
+            </div>
+            <div class="b">
+                <a href="">CONTACT:</a>
+            </div>
+            <div class="b">
+                <a href="">BRANCHES:</a>
+            </div>
+        </nav>
+            <section>
+                <div class="s1">
+                    <marquee direction="up">
+                        <h3>>WEDING SHOOTS</h3>
+                        <h3>>PREWEDING SHOOTS</h3>
+                        <h3>>SHOOTS AVAILBILE</h3>
+                        <h3>>FUNCTIONS</h3>
+                        <h3>>DRONE SHOOTS</h3>
+                    </marquee>
+                </div>
+                <div class="s2">
+                    <marquee behavior="" direction="right">
+                        <h3>>IN TIME</h3>
+                        <h3>>24 HOURS</h3>
+                        <h3>>TIME MANAGEMENT</h3>
+                        <h3>>RULES MUST BE FOLLOW</h3>
+                    </marquee>
+                </div>
+                <div class="s3">
+                    <marquee behavior="" direction="down">
+                        <h3>>CANON200D</h3>
+                        <h3>>NICKON5D</h3>
+                        <h3>>SONEY</h3>
+                        <h3>>LG5D</h3>
+                    </marquee>
+                </div>
+                <div class="s4">
+                    <marquee behavior="" direction="">
+                        <h3>>CHANDU:6303800209</h3>
+                        <h3>>NANI:9398342227</h3>
+                        <h3>>PULI:7604904646</h3>
+                        <h3>>HARESH:9398814560</h3>
+                    </marquee>
+                </div>
+                <div class="s5">
+                    <marquee behavior="" direction="up">
+                        <h3>>NELLORE</h3>
+                        <h3>>TIRUPATHI</h3>
+                        <h3>>ONGOLE</h3>
+                        <h3>>KAVALI</h3>
+                        <h3>>SALEM</h3>
+                    </marquee>
+                </div>
+            </section>
+            <footer><br>
+                <h1>THANKU FOR VISITING US:@chandu</h1>
+            </footer>
+    </body>
+</html>
